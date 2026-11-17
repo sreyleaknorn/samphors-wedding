@@ -501,6 +501,32 @@ body.no-scroll {
   height: 100vh;
 }
 
+/* parent name */
+/* Two equal columns on desktop and tablets */
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+
+
+/* 📱 Switch to 1 column on small screens */
+@media (max-width: 600px) {
+  .name-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -529,28 +555,41 @@ body.no-scroll {
       <svg viewBox="0 0 140 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="rings-motif" aria-hidden="true"><defs><linearGradient id="ringGoldOuter" x1="15%" y1="10%" x2="88%" y2="92%"><stop offset="0%" stop-color="#E6CE93"></stop><stop offset="22%" stop-color="#FFF4D2"></stop><stop offset="46%" stop-color="#C4A362"></stop><stop offset="72%" stop-color="#8A6E3C"></stop><stop offset="90%" stop-color="#D6BA7C"></stop><stop offset="100%" stop-color="#9D804A"></stop></linearGradient><linearGradient id="ringGoldInner" x1="85%" y1="12%" x2="18%" y2="88%"><stop offset="0%" stop-color="#9A7C45"></stop><stop offset="35%" stop-color="#E7CF96"></stop><stop offset="65%" stop-color="#7C6233"></stop><stop offset="100%" stop-color="#C9AA6B"></stop></linearGradient><linearGradient id="ringHighlight" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FFFDF5" stop-opacity="0.92"></stop><stop offset="50%" stop-color="#F4E2B5" stop-opacity="0.35"></stop><stop offset="100%" stop-color="#C5A86F" stop-opacity="0"></stop></linearGradient><filter id="ringSoftShadow" x="-15%" y="-15%" width="130%" height="135%"><feDropShadow dx="0" dy="2.5" stdDeviation="2.2" flood-color="#6A522A" flood-opacity="0.22"></feDropShadow></filter></defs><g filter="url(#ringSoftShadow)"><g transform="translate(50 49) rotate(-12)"><ellipse cx="0" cy="0" rx="27" ry="29" stroke="url(#ringGoldOuter)" stroke-width="6.4"></ellipse><ellipse cx="0" cy="0" rx="23.8" ry="25.8" stroke="url(#ringGoldInner)" stroke-width="1.5"></ellipse><ellipse cx="0" cy="0" rx="28.6" ry="30.6" stroke="url(#ringHighlight)" stroke-width="1.1"></ellipse></g><g transform="translate(90 49) rotate(12)"><ellipse cx="0" cy="0" rx="27" ry="29" stroke="url(#ringGoldOuter)" stroke-width="6.4"></ellipse><ellipse cx="0" cy="0" rx="23.8" ry="25.8" stroke="url(#ringGoldInner)" stroke-width="1.5"></ellipse><ellipse cx="0" cy="0" rx="28.6" ry="30.6" stroke="url(#ringHighlight)" stroke-width="1.1"></ellipse></g><g transform="translate(50 49) rotate(-12)"><path d="M 11 26.5 A 27 29 0 0 0 26.6 5.2" stroke="rgba(68, 50, 22, 0.3)" stroke-width="8.2" stroke-linecap="round"></path><path d="M 10.5 26.7 A 27 29 0 0 0 26.7 4.8" stroke="url(#ringGoldOuter)" stroke-width="6.4" stroke-linecap="round"></path><path d="M 9.6 23.6 A 23.8 25.8 0 0 0 23.5 4.4" stroke="url(#ringGoldInner)" stroke-width="1.5" stroke-linecap="round"></path></g><path d="M36 23 L37.3 26.2 L40.5 27.5 L37.3 28.8 L36 32 L34.7 28.8 L31.5 27.5 L34.7 26.2 Z" fill="#FFFBF0" opacity="0.9"></path><path d="M104 24 L105 26.4 L107.4 27.4 L105 28.4 L104 30.8 L103 28.4 L100.6 27.4 L103 26.4 Z" fill="#FFFBF0" opacity="0.82"></path></g></svg>
       <h1 class="main-title">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
       
-      <p class="parents-line">កូនប្រុស លោក ដារ៉ា និង លោកស្រី ចន្ថា</p>
+	  <br/><br/>
+	  <div class="name-grid">
+		  <div class="input-box">
+			<p class="parents-line" style="margin-top: -10px;">ឪពុកម្ដាយខាងប្រុស </p>
+			<p class="intro-heading">លោក មុី ស៊ាប </p>
+		  </div>
+
+		  <div class="input-box">
+			<p class="parents-line" style="margin-top: -10px;">ឪពុកម្ដាយខាងស្រី</p>
+			<p class="intro-heading">លោក  ប៉ែន សាម៉ន </p>
+		  </div>
+		</div>
+	  
+	  
       <svg viewBox="0 0 320 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="divider-center-dot" aria-hidden="true"><defs><linearGradient id="lineFadeLeft" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#A88E5B" stop-opacity="0"></stop><stop offset="30%" stop-color="#A88E5B" stop-opacity="0.55"></stop><stop offset="100%" stop-color="#8C7244" stop-opacity="0.9"></stop></linearGradient><linearGradient id="lineFadeRight" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#8C7244" stop-opacity="0.9"></stop><stop offset="70%" stop-color="#A88E5B" stop-opacity="0.55"></stop><stop offset="100%" stop-color="#A88E5B" stop-opacity="0"></stop></linearGradient><radialGradient id="pearlGoldDot" cx="35%" cy="35%" r="65%"><stop offset="0%" stop-color="#FFF7DE"></stop><stop offset="45%" stop-color="#D4B575"></stop><stop offset="100%" stop-color="#8C7244"></stop></radialGradient></defs><line x1="12" y1="8" x2="146" y2="8" stroke="url(#lineFadeLeft)" stroke-width="0.95"></line><line x1="174" y1="8" x2="308" y2="8" stroke="url(#lineFadeRight)" stroke-width="0.95"></line><circle cx="151.5" cy="8" r="1.4" fill="#A88E5B" opacity="0.85"></circle><circle cx="160" cy="8" r="3.4" fill="url(#pearlGoldDot)"></circle><circle cx="168.5" cy="8" r="1.4" fill="#A88E5B" opacity="0.85"></circle></svg>
       <div class="intro-block">
         <p class="intro-heading">មានកិត្តិយសសូមគោរពអញ្ជើញ</p>
-        <p class="intro-body">ឯកឧត្ដម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និង ប្រិយមិត្តទាំងអស់ អញ្ជើញចូលរួម ជាអធិបតី ជាភ្ញៀវកិត្តិយស ក្នុង ពិធីអាពាហ៍ពិពាហ៍ របស់យើងខ្ញុំ និងពិសាភោជនាហារ</p>
+        <p class="intro-body">ឯកឧត្ដម លោកឧកញ៉ា លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និង ប្រិយមិត្តទាំងអស់ អញ្ជើញចូលរួម ជាអធិបតី ជាភ្ញៀវកិត្តិយស ដើម្បីប្រសិទ្ធពរជ័យ សិរីសួស្ដី ជ៍យមង្គល ក្នុងកម្មវិធីរៀបអាពាហ៍ពិពាហ៍ កូនប្រុស កូនស្រី របស់យើងខ្ញុំ
+        </p>
       </div>
       <div class="couple-block">
-        <p class="couple-name">[ឈ្មោះកូនប្រុស]</p>
+        <p class="couple-name"> មុី សម្ភស្ស</p>
         <div class="couple-connector-row">
           <span class="connector-line-left" aria-hidden="true"></span>
           <span class="connector-text">និង</span>
           <span class="connector-line-right" aria-hidden="true"></span>
         </div>
-        <p class="couple-name">[ឈ្មោះកូនស្រី]</p>
+        <p class="couple-name">ប៉ែន នុន</p>
       </div>
       <svg viewBox="0 0 360 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="divider-flourish" aria-hidden="true"><defs><linearGradient id="flourishMidGold" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#C5A86F" stop-opacity="0.15"></stop><stop offset="22%" stop-color="#A88E5B" stop-opacity="0.9"></stop><stop offset="50%" stop-color="#8C7244"></stop><stop offset="78%" stop-color="#A88E5B" stop-opacity="0.9"></stop><stop offset="100%" stop-color="#C5A86F" stop-opacity="0.15"></stop></linearGradient></defs><path d="M 164 17 C 148 17 142 8 130 8 C 119 8 115 16 122 21 C 127 24 133 21 131 16 C 129 12 123 14 125 17" stroke="url(#flourishMidGold)" stroke-width="1.2" stroke-linecap="round"></path><path d="M 142 15 C 126 24 108 26 92 20 C 82 16 74 17 69 21 C 65 24 68 28 72 26 C 75 24 73 20 70 21" stroke="url(#flourishMidGold)" stroke-width="1.15" stroke-linecap="round"></path><path d="M 108 17 C 76 17 44 17 16 17" stroke="url(#flourishMidGold)" stroke-width="0.9" stroke-linecap="round"></path><path d="M 196 17 C 212 17 218 8 230 8 C 241 8 245 16 238 21 C 233 24 227 21 229 16 C 231 12 237 14 235 17" stroke="url(#flourishMidGold)" stroke-width="1.2" stroke-linecap="round"></path><path d="M 218 15 C 234 24 252 26 268 20 C 278 16 286 17 291 21 C 295 24 292 28 288 26 C 285 24 287 20 290 21" stroke="url(#flourishMidGold)" stroke-width="1.15" stroke-linecap="round"></path><path d="M 252 17 C 284 17 316 17 344 17" stroke="url(#flourishMidGold)" stroke-width="0.9" stroke-linecap="round"></path><path d="M 180 7 C 183 11 186 14 192 17 C 186 20 183 23 180 27 C 177 23 174 20 168 17 C 174 14 177 11 180 7 Z" stroke="#8C7244" stroke-width="1.1" fill="#DFC487" fill-opacity="0.45"></path><circle cx="180" cy="17" r="2.2" fill="#8C7244"></circle></svg>
       <div class="details-block">
-        <p class="details-date">នៅថ្ងៃ សៅរ៍ ទី១៥ ខែកញ្ញា ឆ្នាំ២០២៦</p>
-        <p class="details-line">ត្រូវនឹងថ្ងៃ ៦កើត ខែ... ឆ្នាំ.... វេលាម៉ោង ៤:៣០ នាទីរសៀល</p>
-        <p class="details-line">នៅ ភូមិ ត្រពាំងបុស្ស ឃុំអណ្ដូងពោធិ៍ ស្រុករមាសហែក ខេត្តស្វាយរៀង</p>
-		
-		
+        <p class="details-date">នៅថ្ងៃ ពុធ ទី១៦ ខែធ្នូ ឆ្នាំ២០២៦</p>
+        <!--<p class="details-line">ត្រូវនឹងថ្ងៃ ៦កើត ខែ... ឆ្នាំ.... វេលាម៉ោង ៤:៣០ នាទីរសៀល</p>-->
+		<p class="details-line">វេលាម៉ោង ៤:០០ នាទីរសៀល</p>
+        <p class="details-line">នៅ ភូមិ ទឹកវិល ឃុំអំពិល ស្រុករមាសហែក ខេត្តស្វាយរៀង</p>
 		
       </div>
 	  
@@ -567,7 +606,7 @@ body.no-scroll {
           <div class="countdown-unit"><strong id="countdown-minutes">00</strong><span>នាទី</span></div>
           <div class="countdown-unit"><strong id="countdown-seconds">00</strong><span>វិនាទី</span></div>
         </div>
-        <p class="countdown-status" id="countdown-status">ថ្ងៃចន្ទ ទី១៤ ខែធ្នូ ឆ្នាំ២០២៦ • ម៉ោង ៤:៣០ រសៀល</p>
+        <p class="countdown-status" id="countdown-status">ថ្ងៃពុធ ទី១៦ ខែធ្នូ ឆ្នាំ២០២៦ • ម៉ោង ៤:០០ រសៀល</p>
       </section>
 
 	  <div class="couple-connector-row">
@@ -578,16 +617,16 @@ body.no-scroll {
 	  <section class="map-section" aria-label="Google Map venue location">
         <div class="map-frame">
           
-		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27063.725284031567!2d104.93752954398742!3d11.586333504940175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310955569f782d27%3A0x8a46c6d93272885f!2sHome%20Chamkar%20Coffee%20%26%20Restaurant!5e0!3m2!1sen!2skh!4v1794898007982!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+		  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12778.224127190022!2d105.80380987725901!3d11.457703173018105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310b79273d487437%3A0x9076c4b262192085!2z4Z6X4Z684Z6Y4Z634Z6R4Z654Z6A4Z6c4Z634Z6bIOGeg-Geu-GfhuGeouGfhuGeluGet-GemyDhnp_hn5LhnprhnrvhnoDhnprhnpjhnrbhnp_hnqDhn4LhnoAg4Z6B4Z-B4Z6P4Z-S4Z6P4Z6f4Z-S4Z6c4Z624Z6Z4Z6a4Z-A4Z6E!5e0!3m2!1sen!2skh!4v1794906305128!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
 		<br/>
-        <a class="map-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=11.586633934324768,104.95398443862994" target="_blank" rel="noopener noreferrer">បើក Google Maps និងទទួលទិសដៅ ↗</a>
+        <a class="map-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=11.459698674915142, 105.80706841963743" target="_blank" rel="noopener noreferrer">បើក Google Maps និងទទួលទិសដៅ ↗</a>
       </section>
 
 	  <br/><br/>
 	  <div class="couple-connector-row">
           <span class="connector-line-left" aria-hidden="true"></span>
-          <span class="connector-text">Gallery</span>
+          <span class="connector-text">កម្រងរូបភាពអនុស្សាវរី៍យ</span>
           <span class="connector-line-right" aria-hidden="true"></span>
         </div>
 		 <br/><br/>
@@ -628,7 +667,7 @@ body.no-scroll {
   
   <script>
     // Uses the invitation date/time in Cambodia time (UTC+7).
-    const weddingTime = new Date('2026-12-14T16:30:00+07:00').getTime();
+    const weddingTime = new Date('2026-12-16T16:30:00+07:00').getTime();
     const countdownFields = {
       days: document.getElementById('countdown-days'),
       hours: document.getElementById('countdown-hours'),
